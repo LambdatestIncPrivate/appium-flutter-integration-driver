@@ -1,0 +1,12 @@
+name: AI Agent Metrics
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize]
+
+jobs:
+  ai-metrics:
+    uses: LambdatestIncPrivate/go-ci/.github/workflows/ai-agent-metrics.yaml@main
+    secrets: inherit
